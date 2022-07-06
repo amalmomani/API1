@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API1", "API1\API1.csproj", "{6E9C913B-6840-49EA-AA6A-8B04749EAD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.core", "learn.core\learn.core.csproj", "{34A6535A-EFB8-4F18-AB09-A82C4AC48886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learn.infra", "learn.infra\learn.infra.csproj", "{799E148F-102D-4ACB-ACB5-D251097B3979}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E9C913B-6840-49EA-AA6A-8B04749EAD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E9C913B-6840-49EA-AA6A-8B04749EAD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E9C913B-6840-49EA-AA6A-8B04749EAD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E9C913B-6840-49EA-AA6A-8B04749EAD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34A6535A-EFB8-4F18-AB09-A82C4AC48886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34A6535A-EFB8-4F18-AB09-A82C4AC48886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34A6535A-EFB8-4F18-AB09-A82C4AC48886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34A6535A-EFB8-4F18-AB09-A82C4AC48886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799E148F-102D-4ACB-ACB5-D251097B3979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799E148F-102D-4ACB-ACB5-D251097B3979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799E148F-102D-4ACB-ACB5-D251097B3979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799E148F-102D-4ACB-ACB5-D251097B3979}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6042DA03-2531-4102-9897-DA690EE73199}
+	EndGlobalSection
+EndGlobal
