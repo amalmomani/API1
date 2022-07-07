@@ -80,22 +80,28 @@ namespace learn.infra.Repository
         }
         public List<string> CategoryCount()
         {
-            IEnumerable<course_api> result = dbContext.dBConnection.Query<course_api>("course_package_api.getallcourse", commandType: CommandType.StoredProcedure);
+            IEnumerable<course_api> courses = dbContext.dBConnection.Query<course_api>("course_package_api.getallcourse", commandType: CommandType.StoredProcedure);
+            IEnumerable<Category_api> cats = dbContext.dBConnection.Query<Category_api>("category_package_api.getallcategory", commandType: CommandType.StoredProcedure);
+
             List<string> categ = new List<string>();
-            foreach (var item in result)
+            int count = 0;
+
+            foreach (var item in cats)
             {
-                int count = 0;
-                int cat = item.categoryId;
-                foreach (var item1 in result)
+                foreach (var item1 in courses)
                 {
-                    if (cat == item1.categoryId)
+                    if (item.categoryId == item1.categoryId)
                     {
                         count++;
                     }
 
                 }
-                categ.Add("category: " + item.categoryId +" || count: "+ count);
+
+                categ.Add("category: " + item.categoryId + " || count: " + count);
+                count = 0;
+
             }
+
             return categ;
         }
         public bool insertcourse(course_api course)

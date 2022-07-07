@@ -36,11 +36,13 @@ namespace API1
             services.AddScoped<ICourseRepository, courseRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<IGeniricRepository, GeniricRepository>();
+            services.AddScoped<IStudent_DTORepository, Student_DTORepository>();
 
             services.AddScoped<ICategoryService, categoryService>();
             services.AddScoped<ICourseService, courseService>();
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<IGeniricService, GeniricService>();
+            services.AddScoped<IStudent_DTOService, Student_DTOService>();
 
 
             services.AddControllers();
