@@ -15,6 +15,7 @@ namespace learn.infra.Repository
     public class Student_DTORepository : IStudent_DTORepository
     {
         private readonly IDBContext dbContext;
+
         public Student_DTORepository(IDBContext dbContext)
         {
             this.dbContext = dbContext;

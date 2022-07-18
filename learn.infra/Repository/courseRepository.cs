@@ -107,14 +107,14 @@ namespace learn.infra.Repository
         public bool insertcourse(course_api course)
         {
             var parameter = new DynamicParameters();
-            parameter.Add("choice", "insert", dbType: DbType.String, direction: ParameterDirection.Input);
+           // parameter.Add("choice", "insert", dbType: DbType.String, direction: ParameterDirection.Input);
 
             parameter.Add("idofcourse", course.courseId, dbType: DbType.Int32, direction: ParameterDirection.Input);
             parameter.Add("nameofcourse", course.courseName, dbType: DbType.String, direction: ParameterDirection.Input);
             parameter.Add("price", course.coursePrice, dbType: DbType.Int32, direction: ParameterDirection.Input);
             parameter.Add("catid", course.categoryId, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
-            var result = dbContext.dBConnection.ExecuteAsync("CRUD.CRUD_operation", parameter, commandType: CommandType.StoredProcedure);
+            var result = dbContext.dBConnection.Execute("course_package_api.createinsertcourse", parameter, commandType: CommandType.StoredProcedure);
             return true;
         }
 
